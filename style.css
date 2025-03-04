@@ -1,0 +1,80 @@
+/* Importing Poppins as the font choice */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Setting margin and padding to 0 by default */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* html defaults including background (behind other elements) */
+html {
+    background-image: url('public/backgroundDarkBlurred.png');
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+
+}
+/* Body styles */
+body {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    filter: unset;
+}
+/* Table styling */
+table {
+    background-image: url('public/backgroundLight.png');
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    padding: 8px;
+    margin: 3em;
+    min-height: 1px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 18px 1px rgba(44, 44, 44, 0.863);
+    gap: 4px;
+}
+/* Table cell styling - rows, headings and data */
+table tr {
+    background-color: rgba(216, 216, 216, 0.7);
+    padding: 8px;
+    margin: 1em 8px;
+    border-radius: 15px;
+}
+table tr td, th {
+    padding: 8px;
+    box-shadow: 1px 1px 3px 1px rgba(44, 44, 44, 0.863);
+
+}
+table th {
+    font-weight: bold;
+    font-size: 1.6em;
+
+}
+/* File input Styling */
+input[type=file]{
+    background-color: rgba(216, 216, 216, 0.7);
+    box-shadow: 4px 4px 18px 1px rgba(44, 44, 44, 0.863);
+    border-radius: 15px;
+
+    margin: 3em auto;
+    padding: 1em;
+
+    font-weight: bold;
+    font-size: 1.4em;
+
+} 
+/* Adding border styling to 1st and last elements of the table */
+
+#table tr th:first-child {
+    border-radius: 15px 0 0 0;
+}
+#table tr th:last-child {
+    border-radius: 0 15px 0 0;
+}
+#table tr:last-child td:last-child {
+    border-radius: 0 0 15px 0;
+}
+#table tr:last-child td:first-child {
+    border-radius: 0 0 0 15px;
+}
